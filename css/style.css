@@ -5,7 +5,6 @@
   margin: 0; 
 }
 
-/* Skalowanie proporcji - dzięki temu nie musisz zmieniać wszystkich font-size w pliku! */
 html {
     font-size: 4.2px; 
 }
@@ -17,17 +16,17 @@ html {
     margin: 0 !important;
     padding: 0 !important;
   }
-} /* <--- TEJ KLAMRY BRAKOWAŁO, TO ONA RATUJE CAŁY KOD! */
+} 
 
 body {
     padding: 0;
     margin: 0;
-    /* USUŃ ZIELONE TŁO STĄD! */
-    /* Dajemy ciemnoszare tło dla przeglądarki (żeby kartka ładnie się odcinała na ekranie) */
     background-color: #525659; 
     color: gray;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 2.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.15rem;
     -webkit-print-color-adjust: exact; 
     print-color-adjust: exact;
 }
@@ -71,7 +70,8 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: stretch; /* Rozciąga obie kolumny równo */
+    flex-grow: 1; /* Wypycha kontener do samego dołu tagu main */
 }
 
 header {
