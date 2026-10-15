@@ -10,7 +10,7 @@
 }
 
 html {
-    font-size: 3.8px; 
+    font-size: 4px; 
 }
 
 @media print {
@@ -203,7 +203,9 @@ section.left_site table td {
     vertical-align: top;
     padding: 1rem 0rem;
 }
-
+section.left_site .experience  {
+    list-style-type: disc;
+}
 section.left_site .experience ul {
     list-style-type: disc;
 }
